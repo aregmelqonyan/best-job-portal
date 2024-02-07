@@ -7,8 +7,6 @@ Welcome to the Best Job Portal in Armenia! This repository contains the source c
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -20,11 +18,17 @@ First, clone this repository to your local machine using Git:
 
 ```bash
 git clone https://github.com/your-username/best-job-portal.git
+```
+
+### 2. Navigate to the Project Directory
+```bash
 cd best-job-portal
+```
+
+### 3. Before running the application, install the required Python dependencies. It's recommended to create a virtual environment first:
+```bash
 # Create a virtual environment (optional but recommended)
 python3 -m venv venv
-3. Install Dependencies
-Before running the application, install the required Python dependencies. It's recommended to create a virtual environment first:
 
 # Activate the virtual environment
 # On macOS/Linux
@@ -34,4 +38,9 @@ venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+### 4. Once the dependencies are installed, you can run the application. Execute the following command:
+```bash
 uvicorn main:app --reload
+```
