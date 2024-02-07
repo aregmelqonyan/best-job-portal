@@ -1,0 +1,86 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Job Portal in Armenia</title>
+    <link rel="stylesheet" href="/static/introduction.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Best Job Portal in Armenia</h1>
+            <p>Find your dream job or hire the best talent</p>
+        </div>
+    </header>
+    <main>
+        <section id="features">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <div class="image-container">
+                    <div class="feature">
+                        <h3>Easy to Use</h3>
+                        <p>Our platform is designed to be intuitive and user-friendly.</p>
+                    </div>
+                    <img class="feature-image" src="/images/6.webp" alt="Feature 1">
+
+                    <div class="feature">
+                        <h3>Free to Use</h3>
+                        <p>Access all features of our job portal without any charges.</p>
+                    </div>
+                    <img class="feature-image" src="/images/2.webp" alt="Feature 2">
+
+                    <div class="feature">
+                        <h3>Large Database</h3>
+                        <p>Discover thousands of job opportunities from various industries.</p>
+                    </div>
+                    <img class="feature-image" src="/images/5.webp" alt="Feature 3">
+
+                </div>
+            </div>
+        </section>
+        <section id="cta">
+            <div class="container">
+                <h2>Join Us Today!</h2>
+                <p>Start your job search or post your job openings now.</p>
+                <a href="/view_jobs" class="btn">Get Started</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Best Job Portal in Armenia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const featureImages = document.querySelectorAll('.feature-image');
+        const featureTexts = document.querySelectorAll('.feature');
+
+        let currentIndex = 0;
+
+        featureImages.forEach((img, index) => {
+            if (index !== 0) {
+                img.style.display = 'none';
+                featureTexts[index].style.display = 'none';
+            }
+        });
+
+        setInterval(() => {
+            featureImages.forEach(img => {
+                img.style.display = 'none';
+            });
+            featureTexts.forEach(text => {
+                text.style.display = 'none';
+            });
+
+            featureImages[currentIndex].style.display = 'block';
+            featureTexts[currentIndex].style.display = 'block';
+
+            currentIndex = (currentIndex + 1) % featureImages.length;
+        }, 3000);
+    </script>
+</body>
+</html>

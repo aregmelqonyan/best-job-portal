@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Jobs</title>
+    <link rel="stylesheet" href="/static/read_jobs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Available Jobs</h1>
+        <ul>
+            {% for job in jobs %}
+                <li>
+                    <strong>{{ job[1] }}</strong><br>
+                    Description: {{ job[2] }}<br>
+                    Requirements: {{ job[3] }}<br>
+                    <form action="/apply_job/{{ job[0] }}" method="post">
+                        <input type="submit" value="Apply">
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/create_job/">Create New Job</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Success</title>
+    <link rel="stylesheet" href="/static/success.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Created Successfully!</h1>
+        <p>Title: {{ title }}</p>
+        <p>Description: {{ description }}</p>
+        <p>Requirements: {{ requirements }}</p>
+        <div class="button-container">
+            <button onclick="redirectToViewJobs()">View Jobs</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToViewJobs() {
+            window.location.href = "/view_jobs/";
+        }
+    </script>
+</body>
+</html>
