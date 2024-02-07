@@ -2,6 +2,14 @@
 
 Welcome to the Best Job Portal in Armenia! This repository contains the source code for a simple and intuitive job portal web application built with FastAPI, SQLite, HTML, CSS, and JavaScript.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Installation
 
 To run this application locally on your machine, follow these steps:
@@ -17,10 +25,10 @@ cd best-job-portal
 python3 -m venv venv
 
 # Activate the virtual environment
-# On Windows
-venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
+# On Windows
+venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
