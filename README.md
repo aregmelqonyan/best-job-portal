@@ -25,7 +25,8 @@ git clone https://github.com/your-username/best-job-portal.git
 cd best-job-portal
 ```
 
-### 3. Before running the application, install the required Python dependencies. It's recommended to create a virtual environment first:
+### 3. Install Dependencies
+## Before running the application, install the required Python dependencies. It's recommended to create a virtual environment first:
 ```bash
 # Create a virtual environment (optional but recommended)
 python3 -m venv venv
