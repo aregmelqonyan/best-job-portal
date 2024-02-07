@@ -5,8 +5,6 @@ Welcome to the Best Job Portal in Armenia! This repository contains the source c
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
 
 ## Installation
 
