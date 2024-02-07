@@ -11,7 +11,7 @@ To run this application locally on your machine, follow these steps:
 First, clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/best-job-portal.git
+git clone https://github.com/aregmelqonyan/best-job-portal.git
 ```
 
 ### 2. Navigate to the Project Directory
