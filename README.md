@@ -2,10 +2,6 @@
 
 Welcome to the Best Job Portal in Armenia! This repository contains the source code for a simple and intuitive job portal web application built with FastAPI, SQLite, HTML, CSS, and JavaScript.
 
-## Table of Contents
-
-- [Installation](#installation)
-
 ## Installation
 
 To run this application locally on your machine, follow these steps:
