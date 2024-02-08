@@ -16,7 +16,7 @@ git clone https://github.com/aregmelqonyan/best-job-portal.git
 
 ### 2. Navigate to the Project Directory
 ```bash
-cd best-job-portal
+cd best-job-portal/best-job-portal 
 ```
 
 ### 3. Install Dependencies
